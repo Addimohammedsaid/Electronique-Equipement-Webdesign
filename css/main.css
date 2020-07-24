@@ -1,0 +1,304 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap");
+
+/* Variables */
+:root {
+  --main-bg-color: white;
+  --secondary-color: #e44749;
+  --border-color: #858585;
+}
+
+/* Default style */
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--main-bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+section {
+  margin: 20px 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.show-mobile {
+  display: block;
+}
+.show-desktop {
+  display: none;
+}
+
+.title {
+  font-family: "Open Sans";
+  font-weight: 300;
+  padding: 40px;
+}
+
+.boxes {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-gap: 2rem;
+}
+
+.box .thumbnail {
+  height: 300px;
+  position: relative;
+}
+
+.box .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.box .thumbnail:after {
+  content: "Display";
+  color: white;
+  width: 100%;
+  height: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-color: black;
+  transition: all 0.4s ease-in-out;
+}
+
+.box:hover > .thumbnail:after {
+  height: 20%;
+  opacity: 0.4;
+}
+
+.box .box-body {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.box .box-body .box-title {
+  font-weight: 400;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
+
+.box .box-body .price {
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.addCart {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.75rem;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+/* Main style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: #ffffff;
+}
+
+header {
+  min-height: 10vh;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bottom-navbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10vh;
+  background-color: #282828;
+  margin: 0;
+}
+
+.bottom-navbar nav {
+  height: 100%;
+}
+
+.bottom-navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: inherit;
+}
+
+.bottom-navbar ul li a {
+  color: white;
+}
+
+/* Show-box Section */
+#show-box {
+  margin-top: 0;
+  min-height: 100vh;
+}
+
+.bg-img {
+  width: 100%;
+  height: 90vh;
+  background: url("../assets/images/show_box.jpg") no-repeat center/cover;
+}
+
+/* Category Section */
+
+main {
+  min-height: 100vh;
+}
+
+#slide {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+#categories {
+  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.category-box {
+  margin: 20px;
+}
+
+.category-box .thumbnail {
+  height: 200px;
+  width: 300px;
+  background-color: grey;
+}
+
+.category-box .thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation-slide {
+  padding: 20px;
+  text-align: center;
+}
+
+.navigation-slide a {
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Footer */
+footer {
+  padding: 50px;
+  background-color: #f5f6fa;
+}
+
+footer .bottom-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+footer .bottom-footer > div {
+  margin-right: 100px;
+}
+
+footer .bottom-footer p {
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--border-color);
+}
+
+footer .bottom-footer .title {
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.email-contact {
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+.email-contact p {
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--border-color);
+  font-size: 1rem;
+  padding-bottom: 10px;
+}
+
+.email-contact form {
+  display: flex;
+  flex-direction: row;
+}
+
+.email-contact form input {
+  border-radius: 3px;
+}
+
+.email-contact form .btn {
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+  margin-left: 10px;
+  background-color: var(--secondary-color);
+}
+
+@media only screen and (min-width: 758px) {
+  .show-mobile {
+    display: none;
+  }
+  .show-desktop {
+    display: block;
+  }
+  #header nav {
+    width: 40%;
+  }
+  #header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  /* Footer */
+  .email-contact {
+    width: 40%;
+    margin-bottom: 50px;
+  }
+}
