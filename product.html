@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/products.css" />
-    <title>Products | Page</title>
+    <link rel="stylesheet" href="css/product.css" />
+    <title>myShop | Home</title>
   </head>
   <body>
     <header id="header" class="show-desktop scrolled">
@@ -26,39 +26,28 @@
         </ul>
       </nav>
     </header>
-    <div class="show-box">
-      <h3>Génie Electrique & Electronique</h3>
-    </div>
     <main>
-      <aside>
-        <ul>
-          <li class="active">
-            <a id="menu1" class="chevron-down">Alimentation du Laboratoire</a>
-            <ul class="hidden" id="sub1">
-              <li>
-                <a href="#">Analyseurs</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#" class="chevron-right">Alimentation du Laboratoire</a>
-          </li>
-          <li><a href="#">Alimentation du Laboratoire</a></li>
-          <li><a href="#">Alimentation du Laboratoire</a></li>
-        </ul>
-      </aside>
-      <div class="products">
-        <div class="filters">
-          <a class="filter" href="#">
-            Tous
-          </a>
-          <a class="filter" href="#">
-            Programmable
-          </a>
-          <a class="filter" href="#">
-            Non Programmable
-          </a>
+      <div class="router">
+        Génie Electrique & Electronique /Génie Electrique & Electronique /
+      </div>
+      <div class="product">
+        <div class="thumbnail">
+          <img src="assets/images/image1.png" />
         </div>
+        <div class="body">
+          <div class="title">CPX-Series</div>
+          <div class="link">
+            <span
+              ><img
+                src="assets/images/download_icon.png"
+                style="width: 48px; height: 48px;"
+            /></span>
+            <p>Consulter la documentation</p>
+          </div>
+          <a class="btn btn-accent">Ajouter au Panier</a>
+        </div>
+      </div>
+      <div class="products">
         <div class="boxes">
           <div class="box">
             <div class="box-thumbnail">
@@ -92,8 +81,50 @@
               product 1
             </div>
           </div>
+          <div class="box">
+            <div class="box-thumbnail">
+              <img src="assets/images/image1.png" />
+            </div>
+            <div class="box-title">
+              product 1
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-thumbnail">
+              <img src="assets/images/image1.png" />
+            </div>
+            <div class="box-title">
+              product 1
+            </div>
+          </div>
         </div>
+        <a class="btn btn-green">Voir Plus</a>
       </div>
+
+      <section id="ask-product">
+        <p class="title">Posez Nous vos QUESTIONs A PROPOS DU PRODUIT !</p>
+        <form>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="model">Model</label>
+              <input type="text" name="email" class="form-control" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Message</label>
+            <textarea
+              class="form-control"
+              name="message"
+              minlength="120"
+            ></textarea>
+          </div>
+          <a class="btn btn-accent">Envoyer</a>
+        </form>
+      </section>
     </main>
     <footer id="footer">
       <div class="email-contact">
@@ -136,6 +167,6 @@
         </ul>
       </nav>
     </section>
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
   </body>
 </html>

@@ -6,18 +6,19 @@
     <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <title>myShop | Home</title>
   </head>
   <body>
-    <header id="header">
-      <nav class="show-desktop">
+    <header id="header" class="show-desktop">
+      <nav>
         <ul>
           <li><a href="#">Contact</a></li>
           <li><a href="#">Recuretement</a></li>
         </ul>
       </nav>
       <!-- <div class="logo">MyShop</div> -->
-      <nav class="show-desktop">
+      <nav>
         <ul>
           <li><a href="#">Shop</a></li>
           <li><a href="#">User</a></li>
@@ -34,34 +35,30 @@
       </div>
     </section>
     <main id="main">
-      <section id="categories">
-        <div class="category-box">
+      <section id="divisions">
+        <a href="products.html" class="division-box">
           <div class="thumbnail">
-            <img
-              src="https://images-na.ssl-images-amazon.com/images/I/714lqlK4qlL._AC_SY355_.jpg"
-              alt=""
-            />
+            <img src="assets/images/Divsion - Engineer.png" />
           </div>
-          <div class="text-align-center title child">Title2</div>
-        </div>
-        <div class="category-box">
+          <div class="title child">Engineering</div>
+          <div class="sub-title">
+            Electronqiue, mecanic & energie renouvlable
+          </div>
+        </a>
+        <a href="products.html" class="division-box">
           <div class="thumbnail">
-            <img
-              src="https://i.ytimg.com/vi/ADJGxOrEZAM/maxresdefault.jpg"
-              alt=""
-            />
+            <img src="assets/images/Divsion - Science.png" />
           </div>
-          <div class="text-align-center title">Title3</div>
-        </div>
-        <div class="category-box">
+          <div class="title">Science</div>
+          <div class="sub-title">Physic, biology & Medcine</div>
+        </a>
+        <a href="products.html" class="division-box">
           <div class="thumbnail">
-            <img
-              src="https://images-na.ssl-images-amazon.com/images/I/714lqlK4qlL._AC_SY355_.jpg"
-              alt=""
-            />
+            <img src="assets/images/Divsion - Research.png" alt="" />
           </div>
-          <div class="text-align-center title">Title4</div>
-        </div>
+          <div class="title">Research & INDUSTRY</div>
+          <div class="sub-title">Engineering & scientific research</div>
+        </a>
       </section>
       <section id="missions">
         <div class="boxes">
@@ -71,7 +68,7 @@
             </div>
             <div class="body">
               <h3 class="title">Importation et Distribution du matériel</h3>
-              <p class="text-body">
+              <p class="text-body show-desktop">
                 ESLI est une entreprise d’importation et de Distribution du
                 materiel. Nos produits sont importés de tous les continents et
                 nous sélectionnons exclusivement des Produits de haute qualité
@@ -85,7 +82,7 @@
             </div>
             <div class="body">
               <h3 class="title">Installation et Configuration</h3>
-              <p class="text-body">
+              <p class="text-body show-desktop">
                 Nous vous présentant un service d’installation et de
                 configuration de nos matériels. A cet effet, ESLI met à votre
                 disposition une équipe d’ingénieurs afin de vous facilité la vie
@@ -96,16 +93,24 @@
           </div>
           <div class="box">
             <div class="prefix">
-              <img src="assets/icons/icons8-lease-100.png" alt="" />
+              <img src="assets/icons/icons8-lease-100.png" />
             </div>
             <div class="body">
               <h3 class="title">Service après vente:</h3>
-              <p class="text-body">
+              <p class="text-body show-desktop">
                 Afin de bien mener vos activités, les ingénieurs d’ESLI vous
                 orientent au long du chemin Vers un succès professionnelle.
               </p>
             </div>
           </div>
+        </div>
+      </section>
+      <section id="sponsors">
+        <div class="boxes">
+          <img src="assets/images/Company.png" />
+          <img src="assets/images/Company.png" />
+          <img src="assets/images/Company.png" />
+          <img src="assets/images/Company.png" />
         </div>
       </section>
     </main>
@@ -143,10 +148,15 @@
     <section class="bottom-navbar show-mobile">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">User</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Menu</a></li>
+          <li>
+            <a href="#"><img src="assets/icons/clarity_user-line.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/icons/carbon_shopping-cart.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/icons/clarity_help-line.png" /></a>
+          </li>
         </ul>
       </nav>
     </section>

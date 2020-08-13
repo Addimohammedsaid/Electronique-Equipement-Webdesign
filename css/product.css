@@ -1,0 +1,139 @@
+.router {
+  padding-top: 178px;
+  padding-left: 43px;
+  font-family: "ApexNew-Book";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  /* identical to box height */
+
+  font-variant: small-caps;
+
+  color: #626262;
+}
+
+.product {
+  height: 364px;
+  max-width: 70%;
+  margin: 10px auto;
+  min-width: 300px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px;
+}
+
+.product .body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product .title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  position: relative;
+}
+
+.product .title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 2px;
+  width: 100%;
+  background-color: #d2d2d2;
+}
+
+.product .link {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.product .link p {
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #000000;
+}
+
+.product .thumbnail img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.products {
+  margin-top: 140px;
+  padding: 50px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.products .btn {
+  margin: 118px auto;
+  width: 180px;
+}
+
+.boxes {
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  grid-gap: 4rem;
+}
+
+#ask-product {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#ask-product .title {
+  font-family: "ApexNew-Light";
+  font-size: 38px;
+  line-height: 48px;
+
+  /* identical to box height */
+  text-align: center;
+  font-variant: small-caps;
+
+  color: #1b1b1b;
+}
+
+#ask-product form {
+  background-color: white;
+  padding: 40px;
+  width: 615px;
+  height: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+#ask-product form label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#ask-product form textarea {
+  height: 150px;
+}
+
+#ask-product form .btn {
+  margin-top: 20px;
+  background: #101965;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
