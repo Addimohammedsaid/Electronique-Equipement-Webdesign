@@ -1,25 +1,32 @@
-.addCart {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  color: white;
-  font-weight: 600;
-  font-size: 0.75rem;
-  background-color: var(--accent-color);
-  cursor: pointer;
-}
+/* 
+Section are separated by 
+"===== name of section =====" comments 
+*/
 
-.show-box {
+/*================ ShowBox Section =================*/
+#show-box {
+  margin: 0;
   width: 100%;
   height: 279px;
-  background: rgba(10, 29, 79, 0.34);
+  background: url("/assets/images/electronic\ cover.png");
+  background-size: cover;
   position: relative;
 }
 
-.show-box h3 {
+#show-box:after {
+  content: "";
   position: absolute;
-  left: 43px;
-  bottom: 23px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(10, 29, 79, 0.34);
+  z-index: 0;
+}
+#show-box h3 {
+  position: absolute;
+  left: 40px;
+  bottom: 40px;
 
   font-family: Apex New;
   font-style: normal;
@@ -30,71 +37,75 @@
 
   text-transform: uppercase;
   color: #ffffff;
+
+  z-index: 1;
 }
 
+/*================ Main Section =================*/
 main {
-  margin-top: 69px;
+  margin: 60px 0;
   display: grid;
   grid-template-columns: 1fr 2.5fr;
 }
 
-aside ul {
+/*================ Side Menu Section =================*/
+main aside ul {
   padding: 20px;
 }
 
-aside ul li {
+main aside ul li {
   padding: 20px;
-}
-
-aside ul li:hover {
-  background-color: #eeeff2;
 }
 
 .active {
   width: 100%;
   background: #eeeff2;
+  cursor: pointer;
 }
 
-aside ul li a {
+main aside ul li a {
   color: var(--dark-color);
   font-family: "ApexNew-Bold";
   font-weight: normal;
 }
 
-aside ul li a::before {
+main aside ul li a {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: baseline;
+}
+
+main aside ul li a::before {
   content: "\203A";
   font-size: 24px;
   margin: 0 10px;
 }
 
-.chevron-down::before {
-  content: "\203A";
-  font-size: 24px;
-  margin: 0 10px;
-  transform: translate(120px, 50%);
-}
+/*================ Products Section =================*/
 
-.products {
+#products {
   padding: 20px;
   width: 90%;
   margin: 0 auto;
 }
 
-.boxes {
+#products .boxes {
   margin-top: 38px;
 }
 
-.box:hover > .box-title {
+#products .box:hover > .box-title {
   color: #556988;
 }
 
-.filters {
+/* Filters */
+#products .filters {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.filter {
+#products .filter {
   margin: 10px;
   padding: 12px 25px;
   color: var(--dark-color);
@@ -105,33 +116,35 @@ aside ul li a::before {
   transition: all 400ms ease;
 }
 
-.filter:hover {
+#products .filter:hover {
   background-color: #556988;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0);
   color: white;
 }
 
-.boxes {
+/* Product Box */
+#products .boxes {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   grid-gap: 4rem;
 }
 
-.box {
+#products .box {
   height: 150px;
   margin: 10px;
+  cursor: pointer;
 }
 
-.box-thumbnail {
+#products .box-thumbnail {
   height: 100%;
 }
 
-.box-thumbnail img {
+#products .box-thumbnail img {
   object-fit: contain;
   height: 100%;
 }
 
-.box-title {
+#products .box-title {
   margin-top: 17px;
   text-align: center;
   font-style: normal;

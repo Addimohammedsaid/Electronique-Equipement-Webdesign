@@ -48,6 +48,7 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 li:hover a:hover {
@@ -97,8 +98,7 @@ ul {
 
 .col-2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 60px;
+  grid-template-columns: 1fr;
 }
 
 /* Main style */
@@ -110,7 +110,7 @@ ul {
 
 body {
   font-family: "Roboto";
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
 }
 
 /* Desktop Size */
@@ -120,5 +120,9 @@ body {
   }
   .show-desktop {
     display: flex;
+  }
+  .col-2 {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
   }
 }

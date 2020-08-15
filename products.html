@@ -17,7 +17,7 @@
           <li><a href="#">Recuretement</a></li>
         </ul>
       </nav>
-      <!-- <div class="logo">MyShop</div> -->
+      <a class="logo" href="index.html">MyShop</a>
       <nav>
         <ul>
           <li><a href="#">Shop</a></li>
@@ -26,28 +26,47 @@
         </ul>
       </nav>
     </header>
-    <div class="show-box">
+    <section id="show-box">
       <h3>Génie Electrique & Electronique</h3>
-    </div>
+    </section>
     <main>
       <aside>
         <ul>
-          <li class="active">
-            <a id="menu1" class="chevron-down">Alimentation du Laboratoire</a>
+          <li>
+            <a id="menu1">Alimentation du Laboratoire</a>
             <ul class="hidden" id="sub1">
-              <li>
+              <li class="active">
                 <a href="#">Analyseurs</a>
+              </li>
+              <li>
+                <a href="#">Fréquencemètre</a>
+              </li>
+              <li>
+                <a href="#">Multimètre</a>
               </li>
             </ul>
           </li>
           <li>
-            <a href="#" class="chevron-right">Alimentation du Laboratoire</a>
+            <a href="#">Électronique Général</a>
           </li>
-          <li><a href="#">Alimentation du Laboratoire</a></li>
-          <li><a href="#">Alimentation du Laboratoire</a></li>
+          <li>
+            <a href="#"
+              >Microprocesseur , Microcontrolleur et Système Embarqué</a
+            >
+          </li>
+          <li><a href="#">Robotique</a></li>
+          <li><a href="#">Contrôle industrielle & Regulation</a></li>
+          <li><a href="#">Système de Communication</a></li>
+          <li><a href="#">Electrotechnique</a></li>
+          <li><a href="#">Instrumentation et Capteurs</a></li>
+          <li><a href="#">Machines Électriques</a></li>
+          <li><a href="#">Réseaux Electrique</a></li>
+          <li><a href="#">Systemes Haute Tension</a></li>
+          <li><a href="#">Electronique de Puissance</a></li>
+          <li><a href="#">Pneumatique et hydraulique</a></li>
         </ul>
       </aside>
-      <div class="products">
+      <section id="products">
         <div class="filters">
           <a class="filter" href="#">
             Tous
@@ -60,70 +79,87 @@
           </a>
         </div>
         <div class="boxes">
-          <div class="box">
+          <a class="box" href="product.html">
             <div class="box-thumbnail">
               <img src="assets/images/image 10.png" />
             </div>
             <div class="box-title">
               GPC-Series
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="product.html">
+            <div class="box-thumbnail">
+              <img src="assets/images/image1.png" />
+            </div>
+            <div class="box-title">
+              CPX-Series
+            </div>
+          </a>
+          <a class="box" href="product.html">
             <div class="box-thumbnail">
               <img src="assets/images/image1.png" />
             </div>
             <div class="box-title">
               product 1
             </div>
-          </div>
-          <div class="box">
+          </a>
+          <a class="box" href="product.html">
             <div class="box-thumbnail">
               <img src="assets/images/image1.png" />
             </div>
             <div class="box-title">
               product 1
             </div>
-          </div>
-          <div class="box">
-            <div class="box-thumbnail">
-              <img src="assets/images/image1.png" />
-            </div>
-            <div class="box-title">
-              product 1
-            </div>
-          </div>
+          </a>
         </div>
-      </div>
+      </section>
     </main>
     <footer id="footer">
-      <div class="email-contact">
-        <p>
-          Entrez votre adresse e-mail et obtenez les dernières informations!
+      <div class="wrapper">
+        <div class="email-contact">
+          <p>
+            Entrez votre email Est restez à jour !!
+          </p>
+          <form>
+            <input type="text" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="bottom-footer">
+          <div class="information">
+            <p class="title">Information</p>
+            <ul>
+              <li>Fax : 023 86 26 81</li>
+              <li>Tel : 023 86 26 82 / 023 86 26 94<lip>
+              <li>
+                Address : E.S.L.I: N°08, Cooppérative Errafik, Rouiba-Alger.
+              </li>
+            </ul>
+          </div>
+          <div class="products">
+            <p class="title">Recrutement</p>
+            <div class="links">
+              <ul>
+                <li><a>Contact</a></li>
+                <li><a>Produits</a></li>
+                <li><a>Promotions</a></li>
+              </ul>
+              <ul>
+                <li>
+                  <a>Engineer</a>
+                </li>
+                <li><a>Science</a></li>
+                <li><a>Research & industry</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="social-network">
+          <p>Suivez-nous sur :</p>
+        </div>
+        <p class="copyright">
+          © 2020 ESLI, Inc. All Rights Reserved. Terms, Privacy & Accessibility
         </p>
-        <form>
-          <input type="text" class="form-control" />
-          <input type="submit" class="btn" value="Subscribe" />
-        </form>
-      </div>
-      <div class="bottom-footer">
-        <div class="help-me">
-          <p class="title">Help-me</p>
-          <p>Contact</p>
-          <p>FAQ</p>
-          <p>Return / Exchange</p>
-        </div>
-        <div class="information">
-          <p class="title">Information</p>
-          <p>About</p>
-          <p>Delivery</p>
-          <p>Condition & terms</p>
-        </div>
-        <div class="products">
-          <p class="title">Products</p>
-          <p>new Products</p>
-          <p>Best seller</p>
-          <p>Promotions</p>
-        </div>
       </div>
     </footer>
     <section class="bottom-navbar show-mobile">

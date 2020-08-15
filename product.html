@@ -17,7 +17,7 @@
           <li><a href="#">Recuretement</a></li>
         </ul>
       </nav>
-      <!-- <div class="logo">MyShop</div> -->
+      <a class="logo" href="index.html">MyShop</a>
       <nav>
         <ul>
           <li><a href="#">Shop</a></li>
@@ -27,27 +27,28 @@
       </nav>
     </header>
     <main>
-      <div class="router">
-        Génie Electrique & Electronique /Génie Electrique & Electronique /
-      </div>
-      <div class="product">
+      <p id="router">
+        Génie Electrique & Electronique / Génie Electrique & Electronique /
+        Alimentation du laboratoire /Non Programmable / CPX- Series
+      </p>
+      <section id="product">
         <div class="thumbnail">
           <img src="assets/images/image1.png" />
         </div>
         <div class="body">
           <div class="title">CPX-Series</div>
           <div class="link">
-            <span
+            <a href="#"
               ><img
-                src="assets/images/download_icon.png"
+                src="assets/icons/download_icon.png"
                 style="width: 48px; height: 48px;"
-            /></span>
+            /></a>
             <p>Consulter la documentation</p>
           </div>
           <a class="btn btn-accent">Ajouter au Panier</a>
         </div>
-      </div>
-      <div class="products">
+      </section>
+      <section id="products">
         <div class="boxes">
           <div class="box">
             <div class="box-thumbnail">
@@ -99,7 +100,7 @@
           </div>
         </div>
         <a class="btn btn-green">Voir Plus</a>
-      </div>
+      </section>
 
       <section id="ask-product">
         <p class="title">Posez Nous vos QUESTIONs A PROPOS DU PRODUIT !</p>
@@ -107,11 +108,16 @@
           <div class="col-2">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" name="email" class="form-control" />
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                autocomplete="email"
+              />
             </div>
             <div class="form-group">
               <label for="model">Model</label>
-              <input type="text" name="email" class="form-control" />
+              <input type="text" name="model" class="form-control" />
             </div>
           </div>
           <div class="form-group">
@@ -127,43 +133,65 @@
       </section>
     </main>
     <footer id="footer">
-      <div class="email-contact">
-        <p>
-          Entrez votre adresse e-mail et obtenez les dernières informations!
+      <div class="wrapper">
+        <div class="email-contact">
+          <p>
+            Entrez votre email Est restez à jour !!
+          </p>
+          <form>
+            <input type="text" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="bottom-footer">
+          <div class="information">
+            <p class="title">Information</p>
+            <ul>
+              <li>Fax : 023 86 26 81</li>
+              <li>Tel : 023 86 26 82 / 023 86 26 94<lip>
+              <li>
+                Address : E.S.L.I: N°08, Cooppérative Errafik, Rouiba-Alger.
+              </li>
+            </ul>
+          </div>
+          <div class="products">
+            <p class="title">Recrutement</p>
+            <div class="links">
+              <ul>
+                <li><a>Contact</a></li>
+                <li><a>Produits</a></li>
+                <li><a>Promotions</a></li>
+              </ul>
+              <ul>
+                <li>
+                  <a>Engineer</a>
+                </li>
+                <li><a>Science</a></li>
+                <li><a>Research & industry</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="social-network">
+          <p>Suivez-nous sur :</p>
+        </div>
+        <p class="copyright">
+          © 2020 ESLI, Inc. All Rights Reserved. Terms, Privacy & Accessibility
         </p>
-        <form>
-          <input type="text" class="form-control" />
-          <input type="submit" class="btn" value="Subscribe" />
-        </form>
-      </div>
-      <div class="bottom-footer">
-        <div class="help-me">
-          <p class="title">Help-me</p>
-          <p>Contact</p>
-          <p>FAQ</p>
-          <p>Return / Exchange</p>
-        </div>
-        <div class="information">
-          <p class="title">Information</p>
-          <p>About</p>
-          <p>Delivery</p>
-          <p>Condition & terms</p>
-        </div>
-        <div class="products">
-          <p class="title">Products</p>
-          <p>new Products</p>
-          <p>Best seller</p>
-          <p>Promotions</p>
-        </div>
       </div>
     </footer>
     <section class="bottom-navbar show-mobile">
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">User</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">Menu</a></li>
+          <li>
+            <a href="#"><img src="assets/icons/clarity_user-line.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/icons/carbon_shopping-cart.png" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="assets/icons/clarity_help-line.png" /></a>
+          </li>
         </ul>
       </nav>
     </section>

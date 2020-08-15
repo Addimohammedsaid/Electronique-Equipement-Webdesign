@@ -1,37 +1,47 @@
-.router {
-  padding-top: 178px;
+/* 
+Section are separated by 
+"===== name of section =====" comments 
+*/
+
+/*================ Router Section =================*/
+#router {
+  padding-top: 5vh;
+  padding-bottom: 10vh;
   padding-left: 43px;
-  font-family: "ApexNew-Book";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
   /* identical to box height */
+  /* background-color: #efeff5; */
 
-  font-variant: small-caps;
-
-  color: #626262;
+  text-transform: capitalize;
+  color: #a7a7a7;
 }
 
-.product {
-  height: 364px;
+/*================ Product Section =================*/
+#product {
+  /* height: 60vh; */
   max-width: 70%;
-  margin: 10px auto;
   min-width: 300px;
   display: grid;
-  margin: 0 auto;
-  grid-template-columns: 1fr 1fr;
+  /* margin: 0 auto; */
+  margin: 30px auto;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: 1fr;
   grid-gap: 100px;
 }
 
-.product .body {
+#product .body {
+  height: 300px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.product .title {
+#product .title {
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -40,7 +50,7 @@
   position: relative;
 }
 
-.product .title:after {
+#product .title:after {
   content: "";
   position: absolute;
   left: 0;
@@ -50,14 +60,20 @@
   background-color: #d2d2d2;
 }
 
-.product .link {
+#product .link {
   display: flex;
   flex-direction: row;
   align-items: baseline;
 }
 
-.product .link p {
-  margin-left: 25px;
+#product .link a {
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+#product .link p {
+  margin-left: 10px;
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
@@ -65,75 +81,159 @@
   color: #000000;
 }
 
-.product .thumbnail img {
+#product .thumbnail {
+  height: 300px;
+  height: 100%;
+}
+
+#product .thumbnail img {
   height: 100%;
   object-fit: contain;
 }
 
-.products {
-  margin-top: 140px;
-  padding: 50px;
-  background: white;
-  display: flex;
-  flex-direction: column;
+#product .btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 28px;
+  padding: 5px;
+  color: #f3f3f3;
 }
 
-.products .btn {
-  margin: 118px auto;
+/*================ Recommended Products Section =================*/
+#products {
+  min-height: 90vh;
+  margin-top: 47px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+  border: 1px solid #efeff5;
+}
+
+#products .btn {
+  background-color: white;
+  border: 1px solid #d1d1d1;
+  color: #a7a7a7;
+  padding: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
   width: 180px;
 }
 
-.boxes {
-  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+#products .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
   grid-gap: 4rem;
 }
 
+#products .boxes .box {
+  height: 150px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+#products .boxes .box-thumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+#products .boxes .box-thumbnail img {
+  height: 100%;
+  object-fit: contain;
+}
+
+#products .box-title {
+  padding-top: 15px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+/*================ Ask About Product Section =================*/
 #ask-product {
-  height: 100vh;
+  margin: 47px 0;
+  height: 80vh;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 #ask-product .title {
-  font-family: "ApexNew-Light";
-  font-size: 38px;
-  line-height: 48px;
-
+  font-size: 2rem;
+  padding: 20px;
   /* identical to box height */
   text-align: center;
-  font-variant: small-caps;
+  text-transform: uppercase;
 
   color: #1b1b1b;
 }
 
 #ask-product form {
+  width: 60vw;
+  min-width: 400px;
+  height: 70vh;
+  min-height: 550px;
   background-color: white;
-  padding: 40px;
-  width: 615px;
-  height: 70%;
+  padding: 20px 54px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px solid #efeff5;
+}
+
+.form-group {
+  margin-bottom: 20px;
 }
 
 #ask-product form label {
   display: block;
-  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: "Roboto";
+}
+
+#ask-product form input {
+  font-size: 1rem;
+  font-family: "Roboto";
 }
 
 #ask-product form textarea {
-  height: 150px;
+  font-size: 1rem;
+  height: 120px;
+  font-family: "Roboto";
 }
 
 #ask-product form .btn {
-  margin-top: 20px;
-  background: #101965;
+  height: 48px;
+  background: grey;
   border-radius: 3px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 1rem;
   /* identical to box height */
-
+  text-transform: uppercase;
   color: #ffffff;
+  padding: 14px 0;
+}
+
+/* Desktop Size */
+@media only screen and (min-width: 758px) {
+  #product {
+    height: 60vh;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #router {
+    padding-top: 20vh;
+  }
+
+  #ask-product form {
+    min-height: 350px;
+  }
 }
