@@ -49,6 +49,7 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: var(--dark-color);
 }
 
 li:hover a:hover {
